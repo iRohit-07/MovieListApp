@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#000000"
+    android:fitsSystemWindows="true">
+
+    <!-- Top Header -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:gravity="center_vertical"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:background="#000000">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="MOVIE HUB"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:letterSpacing="0.03" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="●"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+    <!-- Movie Grid -->
+    <GridView
+        android:id="@+id/movieListView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#000000"
+        android:numColumns="2"
+        android:horizontalSpacing="0dp"
+        android:verticalSpacing="0dp"
+        android:paddingStart="14dp"
+        android:paddingEnd="14dp"
+        android:clipToPadding="false"
+        android:stretchMode="columnWidth" />
+
+    <!-- Bottom Navigation -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:background="#050505"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp">
+
+        <!-- Home -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="◉"
+                android:textColor="#FFFFFF"
+                android:textSize="25sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Home"
+                android:textColor="#FFFFFF"
+                android:textSize="10sp"
+                android:layout_marginTop="2dp" />
+
+        </LinearLayout>
+
+        <!-- Discover -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="▣"
+                android:textColor="#777777"
+                android:textSize="23sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Discover"
+                android:textColor="#777777"
+                android:textSize="10sp"
+                android:layout_marginTop="2dp" />
+
+        </LinearLayout>
+
+        <!-- Favorites -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="♡"
+                android:textColor="#777777"
+                android:textSize="27sp"
+                android:gravity="center" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Favorites"
+                android:textColor="#777777"
+                android:textSize="10sp"
+                android:layout_marginTop="2dp" />
+
+        </LinearLayout>
+
+        <!-- Watchlist -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="▢"
+                android:textColor="#777777"
+                android:textSize="25sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Watchlist"
+                android:textColor="#777777"
+                android:textSize="10sp"
+                android:layout_marginTop="2dp" />
+
+        </LinearLayout>
+
+        <!-- Profile -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="●"
+                android:textColor="#777777"
+                android:textSize="25sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Profile"
+                android:textColor="#777777"
+                android:textSize="10sp"
+                android:layout_marginTop="2dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
